@@ -1,7 +1,7 @@
 function myFunction() {
   var password = document.getElementById('floatingPassword').value;
   if (password == 1234) {
-    location.replace("clock-out.html")
+    location.replace("./sign-in/clock-out.html")
   } else {
     alert("Please enter correct password")
   }
