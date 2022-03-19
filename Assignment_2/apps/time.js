@@ -44,3 +44,49 @@ function clock2() {
       hour12: true
     })
 }
+
+function leaveFunc() {
+  var val = "Called in Sick";
+  document.getElementById("outStatus").innerHTML = val;
+}
+
+function leaveFunc2() {
+  var val = "On Vacation";
+  document.getElementById("outStatus").innerHTML = val;
+}
+
+function selectEmployee() {
+  var val = document.getElementById("ex1").value;
+  var newVal = "Employee:" + " " + val;
+  document.getElementById("outStatusEmployee").innerHTML = newVal;
+}
+
+function selectEmployee2() {
+  var val = document.getElementById("ex2").value;
+  var newVal = "Employee:" + " " + val;
+  document.getElementById("outStatusEmployee").innerHTML = newVal;
+}
+
+function selectEmployee3() {
+  var val = document.getElementById("ex3").value;
+  var newVal = "Employee:" + " " + val;
+  document.getElementById("outStatusEmployee").innerHTML = newVal;
+}
+
+function selectLocation() {
+  var val = document.getElementById("lx1").value;
+  var newVal = "Location:" + " " + val;
+  document.getElementById("outLocation").innerHTML = newVal;
+}
+
+function selectLocation2() {
+  var val = document.getElementById("lx2").value;
+  var newVal = "Location:" + " " + val;
+  document.getElementById("outLocation").innerHTML = newVal;
+}
+
+function selectLocation3() {
+  var val = document.getElementById("lx3").value;
+  var newVal = "Location:" + " " + val;
+  document.getElementById("outLocation").innerHTML = newVal;
+}

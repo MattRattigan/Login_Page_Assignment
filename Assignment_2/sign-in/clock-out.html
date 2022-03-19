@@ -35,13 +35,13 @@
       </div>
     </div>
     <div class="dropdown">
-      <button class="dropbtn">Call In Sick</button>
+      <button class="dropbtn" onclick="leaveFunc()">Call In Sick</button>
     </div>
     <div class="dropdown">
-      <button class="dropbtn">Vacation</button>
+      <button class="dropbtn" onclick="leaveFunc2()">Vacation</button>
     </div>
     <div class="dropdown">
-      <button class="dropbtn">Summary</button>
+      <button class="dropbtn" onclick="leaveFunc3()">Summary</button>
     </div>
   </div>
 
@@ -53,11 +53,11 @@
 
 
       <div class="dropdown">
-        <button class="dropbtn button-style body-arrow-color body_switch">Select employee<i class="body-arrow body-arrow-down"></i></button>
+        <button class="dropbtn button-style body-arrow-color body_switch" onclick="selectEmployee()">Select employee<i class="body-arrow body-arrow-down"></i></button>
         <div class="dropdown-content body_switch_dropdown">
-          <a href="#">Suge Knight</a>
-          <a href="#">Luigi</a>
-          <a href="#">Waldo</a>
+          <button class="link" onclick="selectEmployee()" id="ex1" value="Suge Knight">Suge Knight</button>
+          <button class="link" onclick="selectEmployee2()" id="ex2" value="Luigi">Luigi</button>
+          <button class="link" onclick="selectEmployee3()" id="ex3" value="Waldo">Waldo</button>
         </div>
       </div>
 
@@ -65,9 +65,9 @@
       <div class="dropdown">
         <button class="dropbtn body-arrow-color body_switch_2">Select employee location<i class="body-arrow body-arrow-down"></i></button>
         <div class="dropdown-content body_switch_dropdown2">
-          <a href="#">Prison</a>
-          <a href="#">Mushroom Kingdom</a>
-          <a href="#">Somewhere</a>
+          <button class="link" onclick="selectLocation()" id="lx1" value="Prison">Prison</button>
+          <button class="link" onclick="selectLocation2()" id="lx2" value="Mushroom Kingdom">Mushroom Kingdom</button>
+          <button class="link" onclick="selectLocation3()" id="lx3" value="Somewhere">Somewhere</button>
         </div>
       </div>
       <div class="date_time_body">
@@ -85,6 +85,10 @@
 
     </div>
   </div>
+  <p id="outStatusEmployee"></p>
+  <p id="outLocation"></p>
+  <p id="outStatus"></p>
+
 
 
 
