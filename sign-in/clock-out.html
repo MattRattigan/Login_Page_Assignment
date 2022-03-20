@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clock Out</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <script type="text/javascript" src="../apps/time.js"></script>
+</head>
+
+<body onload="startTime()">
+
+
+
+  <div class="upper">
+    <div class="top-line">
+      <img src="../images/keiser-university.png" alt="" height="50rem">
+      <h5 id="log" style="display:inline"><a href="../index.html">Logout</a></h5>
+    </div>
+    <div class="outside-time">
+      <h3 id="time2" style="display:inline-block">Hello</h3>
+      <h3 id="hours2" style="display:inline" margin-left="20px">time</h3>
+    </div>
+
+  </div>
+
+  <div class="container">
+    <div class="dropdown">
+      <button class="dropbtn" style="color:#f9f9f9">Time Clock<i class="arrow down"></i></button>
+      <div class="dropdown-content">
+        <a href="clock-in.html">Clock In</a>
+        <a href="clock-out.html">Clock Out</a>
+
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="leaveFunc()">Call In Sick</button>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="leaveFunc2()">Vacation</button>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="leaveFunc3()">Summary</button>
+    </div>
+  </div>
+
+  <div class="contains-middle">
+    <div class="middle">
+      <h1 id=move_middle>Current Date & Time</h1>
+      <p id='time'></p>
+      <p id='hours'>time</p>
+
+
+      <div class="dropdown">
+        <button class="dropbtn button-style body-arrow-color body_switch" onclick="selectEmployee()">Select employee<i class="body-arrow body-arrow-down"></i></button>
+        <div class="dropdown-content body_switch_dropdown">
+          <button class="link" onclick="selectEmployee()" id="ex1" value="Suge Knight">Suge Knight</button>
+          <button class="link" onclick="selectEmployee2()" id="ex2" value="Luigi">Luigi</button>
+          <button class="link" onclick="selectEmployee3()" id="ex3" value="Waldo">Waldo</button>
+        </div>
+      </div>
+
+
+      <div class="dropdown">
+        <button class="dropbtn body-arrow-color body_switch_2">Select employee location<i class="body-arrow body-arrow-down"></i></button>
+        <div class="dropdown-content body_switch_dropdown2">
+          <button class="link" onclick="selectLocation()" id="lx1" value="Prison">Prison</button>
+          <button class="link" onclick="selectLocation2()" id="lx2" value="Mushroom Kingdom">Mushroom Kingdom</button>
+          <button class="link" onclick="selectLocation3()" id="lx3" value="Somewhere">Somewhere</button>
+        </div>
+      </div>
+      <div class="date_time_body">
+        <label class="switch switch_to_clock">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+        <p id="move_to_clock">Use Current Date & Time</p>
+        <img class="clock_image " src="../images/clock-alarm.png" alt="" height="80px" display="inline">
+        <div class="">
+          <button class="clock-in" style="background-color : red">Clock Out</button>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <p id="outStatusEmployee"></p>
+  <p id="outLocation"></p>
+  <p id="outStatus"></p>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
