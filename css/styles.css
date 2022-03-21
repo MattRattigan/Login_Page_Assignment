@@ -112,7 +112,7 @@ h1 {
 .container {
   margin-left: 1000px;
   margin-bottom: 17px;
-  width: 320px;
+  width: 340px;
   background-color: #c9cfd4
 }
 
@@ -252,7 +252,7 @@ width : 200;
 
 #move_to_clock {
   position: relative;
-  left: 275px;
+  left: 285px;
 }
 
 .switch_to_clock{
